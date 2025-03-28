@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Item Details */
+.item-details {
+    padding: 20px;
+}
+
+.item-title {
+    font-size: 2em;
+    color: #556b2f;
+    margin-bottom: 20px;
+}
+
+.item-price {
+    font-size: 1.5em;
+    color: #964e02;
+    margin-bottom: 20px;
+}
+
+.item-colors,
+.item-sizes {
+    margin-bottom: 20px;
+}
+
+.add-to-basket {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: auto; /* Let images adjust their height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .item-details {
+        padding: 10px;
+    }
+
+    .add-to-basket {
+        width: 100%; /* Make button full width on smaller screens */
+    }
+}

@@ -1,0 +1,115 @@
+/* Custom styles for the profile page */
+#personal-info, #orders {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content-area {
+    margin-top: 20px;
+}
+
+#order-details {
+    margin-top: 20px;
+}
+
+/* Adjust sidebar for mobile */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Ensure sidebar is above content on mobile */
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable sidebar on overflow */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Main content adjustment */
+@media (min-width: 768px) {
+    .sidebar {
+        position: sticky;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+}
+/* Style for the Orders section */
+#orders {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Style for order items */
+#order-list .list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+#order-list .list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+#order-details {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#order-items .card {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#order-items .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#order-items .card-body {
+    padding: 15px;
+}
+
+#order-items .card-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#order-items p {
+    font-size: 0.9em;
+}
+
+/* Styles for the order header */
+#order-id {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#order-status, #order-date {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
